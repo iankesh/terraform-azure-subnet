@@ -44,7 +44,7 @@ provider "azurerm" {
 }
 
 module "az_resource_group" {
-  source   = "../terraform-azure-resource-group"
+  source   = "iankesh/resource-group/azure"
   name     = "ankesh-workspace"
   location = "westeurope"
   team_tag = "DevOps"
@@ -52,7 +52,7 @@ module "az_resource_group" {
 }
 
 module "az_virtual_network" {
-  source              = "../terraform-azure-virtual-network"
+  source              = "iankesh/virtual-network/azure"
   name                = "ankesh-vnet"
   resource_group_name = module.az_resource_group.az_rg_name
   address_space       = "10.0.2.0/24"
