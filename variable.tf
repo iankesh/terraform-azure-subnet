@@ -18,19 +18,3 @@ variable "name" {
   description = "(Required) The name of the virtual network"
   default     = "cloud-subnet"
 }
-
-variable "env" {
-  description = "(Optional) name of the environment"
-  default     = "dev"
-}
-
-variable "team_tag" {
-  description = "(Optional) tag a team"
-  default     = "DevOps"
-}
-
-variable "creator" {
-  description = "(Optional) tag a creator"
-  default     = "iankesh"
-}
-
